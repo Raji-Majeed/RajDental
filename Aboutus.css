@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CONTENT SECTION */
+.content-section{
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* HEADING */
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+/* LINE UNDER HEADING */
+.content span{
+    display: block;
+    height: 2px;
+    width: 60px;
+    background: #06d6a0;
+    margin: 15px auto;
+}
+
+/* PARAGRAPH */
+.content p{
+    font-weight: 300;
+    opacity: 0.8;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* LINKS */
+.links{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.links li{
+    display: inline-block;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.links li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.links li:hover{
+    border-color: #06d6a0;
+    background: #06d6a0;
+}
+
+.links li:hover a{
+    color: #fff;
+}
+
+/* SOCIAL ICONS */
+.icons{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.icons li{
+    margin: 0 10px;
+}
+
+.icons li i{
+    font-size: 22px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.icons li i:hover{
+    color: #06d6a0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px){
+    .content-section{
+        padding: 30px 20px;
+    }
+
+    .content h2{
+        font-size: 28px;
+    }
+
+    .content p{
+        font-size: 14px;
+    }
+
+    .links li{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .icons li i{
+        font-size: 18px;
+    }
+}
